@@ -1,7 +1,107 @@
-#menu
-{
+#menu {
 	position: fixed;
 	width: 100%;
-	height: 35px;
-	background: white;
-}
+	background: #00cfff;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	font-family: sans-serif;
+  }
+  
+  .menu-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+  }
+  
+  .logo {
+	font-weight: bold;
+	padding: 0 15px;
+	color: white;
+  }
+  
+  #menu ul {
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #menu ul li {
+	margin: 0 10px;
+  }
+  
+  #menu ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	transition: color 0.3s;
+  }
+  
+  #menu ul li a:hover {
+	color: #003f4f;
+  }
+  
+  .section {
+	padding: 100px 20px;
+	max-width: 800px;
+	margin: 0 auto;
+	font-family: sans-serif;
+  }
+  
+  .section h2 {
+	border-bottom: 2px solid #00cfff;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+  }
+  
+  .gallery-img {
+	max-width: 100%;
+	height: auto;
+	margin: 10px;
+	display: inline-block;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea,
+  form select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  form input[type="submit"] {
+	background-color: #00cfff;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 4px;
+  }
+  
+  form input[type="submit"]:hover {
+	background-color: #007c99;
+  }
+  
+  iframe {
+	max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+	.menu-content {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+	#menu ul {
+	  flex-direction: column;
+	}
+	#menu ul li {
+	  margin: 5px 0;
+	}
+  }
